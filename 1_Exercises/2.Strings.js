@@ -22,7 +22,7 @@ const anotherNumberTwo = "2.30";
 
 const resultTwo = Number(anotherNumberOne) + Number(anotherNumberTwo)
 
-console.log(resultTwo.toFixed(2));
+console.log(resultTwo.toFixed(2))
 
 // --------------------------------------
 // Exercise 5 - Decimals and average
@@ -36,7 +36,7 @@ const three = 98;
 
 const resultThree = (one + two + three)/3
 
-console.log(resultThree.toFixed(5));
+console.log(resultThree.toFixed(5))
 
 // --------------------------------------
 // Exercise 6 - Get the character by index
@@ -47,8 +47,8 @@ const letters = "abc";
 letterC = letters.charAt(2)
 letterCTwo = letters.charAt(letters.indexOf("c"))
 
-console.log(letterC);
-console.log(letterCTwo);
+console.log(letterC)
+console.log(letterCTwo)
 
 // --------------------------------------
 // Exercise 7 - Replace
@@ -59,7 +59,7 @@ const fact = "You are learning javascript!";
 
 fact.replace("j", "J")
 
-console.log(fact);
+console.log(fact)
 // --------------------------------------
 
 
