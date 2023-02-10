@@ -1,0 +1,8 @@
+Maven       vs.         npm
+
+pom.xml                 package.json
+
+
+meta information        meta information
+dependencies            dependencies
+life cycles             scripts
