@@ -1,0 +1,6 @@
+anayomy of an URL
+
+protocol
+        domain   endpoint     path variable
+http://localhost/kickdinosaur/:id?size=1200
+                                  query string
