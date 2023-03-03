@@ -1,3 +1,12 @@
+const form = document.getElementById("form")
+const button = document.getElementById("button")
+
+function handleEvent(event)
+{
+    event.preventDefault()
+}
+
+form.addEventListener("submit", handleEvent)
 
 function changeDays(daysUntil)
 {
@@ -5,18 +14,21 @@ function changeDays(daysUntil)
     days.innerText = daysUntil
 }
 
-function calcDays()
+function calcDays(event)
 {
-    const date = document.getElementById("inputDate")
+    const date = {
+        date:document.getElementById("inputDate").value
+    }  
+    console.log(date);
     fetch("/", {
         method:"POST",
         headers:{
             "Content-Type": "application/json"
         },
-        body:
-        {
-            date:date
-        }
+        body: JSON.stringify(date)
     }).then(response => response.json())
-    .then(result => changeDays(result.days))
+    .then(result =>  changeDays(result.data.days))
+    event.preventDefault()
 }
+
+button.addEventListener("click", calcDays)
