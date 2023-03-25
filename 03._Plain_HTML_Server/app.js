@@ -21,10 +21,21 @@ app.get("/visitors", (req, res) => {
     res.sendFile(__dirname + "/public/visitors/visitors.html");
 });
 
-app.get("/museumGuards", (req, res) =>
+app.get("/api/guards", (req, res) =>
 {
-    res.sendFile(__dirname + "/public/museum-guards/museum-guards.html")
+    if(req.query.passport === "theskyisblue")
+    {
+        res.send("/api/tanks")
+    }
+    else
+    {
+        res.send({message:"Give us the secret query string"})
+    }
+    
+    //res.sendFile(__dirname + "/public/museum-guards/museum-guards.html")
 })
+
+app.get("/proxy")
 
 /* API */
 

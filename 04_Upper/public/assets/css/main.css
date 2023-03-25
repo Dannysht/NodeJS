@@ -1,0 +1,21 @@
+body
+{
+    background-color: gray;
+}
+
+#logo
+{
+    max-width: 5em;
+}
+
+main
+{
+    min-height: 100vh;
+    flex: 1;
+    flex-direction: column;
+}
+
+footer
+{
+    flex: 1
+}

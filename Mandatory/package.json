@@ -1,7 +1,7 @@
 {
-  "name": "upper",
+  "name": "notes",
   "version": "0.0.1",
-  "description": "Motivation app with jokes, quotes and daily errands",
+  "description": "Note app from NodeJS class in KEA",
   "type": "module",
   "main": "app.js",
   "dependencies": {
@@ -64,29 +64,16 @@
     "vary": "^1.1.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "list-files": "ls",
-    "cross-dev": "cross-env PORT=9090 ENV=DEV nodemon app.js",
-    "cross-prod": "cross-env PORT=80 nodemon app.js",
-    "dev": "PORT=8080 nodemon app.js",
-    "prod": "PORT=80 node.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dannysht/NodeJS.git"
   },
   "keywords": [
-    "motivation",
-    "jokes",
-    "daily",
-    "commands",
-    "upper",
-    "happy",
-    "daily",
-    "errands",
-    "up",
-    "good",
-    "time"
+    "mandatory",
+    "project",
+    "notes",
+    "week"
   ],
   "author": "Daniel Shterev",
   "license": "MIT",

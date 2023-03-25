@@ -1,12 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upper</title>
-</head>
-<body>
-    <h1>IRL Quests</h1>
-</body>
-</html>
+
+        <h1>IRL Quests</h1>
+        <h2>Your next quest is to...</h2>
+        <select>
+            <option value="education">Education</option>
+            <option value="Recreational">Recreational</option>
+            <option value="Social">Social</option>
+            <option value="DIY">DIY</option>
+            <option value="Charity">Charity</option>
+            <option>Cooking</option>
+            <option>Relaxation</option>
+            <option>Music</option>
+            <option>Busywork</option>
+        </select>
+
+        <button onclick="getQuest()">Get a quest</button>
+        
+        <h2 id="quest"></h2>
+    <script src="quests.js"></script>
