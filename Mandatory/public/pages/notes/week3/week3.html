@@ -1,0 +1,28 @@
+<h1>Week 3</h1>
+<h2>Loops</h2>
+<p>
+    We did loop exercises using (+map, +filter, %reduce). In order to be able to pick the right one and use it at the appropriate time.
+    <br>
+    <strong>Here is an example of the exercises we did: </strong>
+    <br>
+    <img src="assets/images/ex2.png">
+</p>
+<h2>Node modules</h2>
+<p>
+    The node_modules directory is a folder that is automatically created when you install dependencies for a Node.js project using npm. <br>It contains all the packages and modules that your project depends on, including their dependencies, and is used by Node.js to resolve and load the required modules at runtime.
+
+<br>The node_modules directory is organized based on the package names and versions specified in the package.json file of your project. <br>Each package is installed in its own subdirectory within the node_modules directory, and can be accessed using the require function in your Node.js code.<br>
+
+ To install dependencies like for example Express we use npm install express, which will create a node_modules directory with an express subdirectory containing <br>the express package and its dependencies. You can then load the express package in your code using require('express').
+
+<br>The node_modules directory should not be included in version control or deployed with your application, as it can be easily recreated by running npm install. <br>Instead, you should include the package.json file.
+</p>
+<h2>Static files in express</h2>
+<p>To use static files we use the following command express().use(express.static("Name of the folder")). <br>
+    Doing this allows the user acess to a folder in which we store static files like HTML, JS and CSS files.<br>
+    This is done to avoid security breaches only allowing the user to files they are allowed to view.
+</p>
+<p><strong>An example of serving html file with Express: </strong></p>
+<img src="assets/images/static.png">
+<p><strong>An example of the file structure for the static folder: </strong></p>
+<img src="assets/images/structure.png">

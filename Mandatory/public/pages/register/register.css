@@ -7,3 +7,14 @@ body
 {
     overflow-x: hidden;
 }
+
+form
+{
+    top: 25%;
+    left: 37%;
+    position: absolute;
+    padding: 50px;
+    background-color: gainsboro;
+    display: block;
+    border-radius: 6px;
+}

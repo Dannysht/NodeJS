@@ -5,8 +5,6 @@ const { getTanks, addTank } = require("./util/tanks.js")
 
 app.use(express.static("public"));
 
-let visitorCount = 0;
-
 /* Pages */
 
 app.get("/", (req, res) => {
@@ -16,7 +14,7 @@ app.get("/", (req, res) => {
 app.get("/tanks", (req, res) => {
     res.sendFile(__dirname + "/public/tanks/tanks.html");
 });
-
+let visitorCount = 0;
 app.get("/visitors", (req, res) => {
     res.sendFile(__dirname + "/public/visitors/visitors.html");
 });
