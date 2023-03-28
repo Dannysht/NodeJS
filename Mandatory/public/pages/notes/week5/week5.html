@@ -1,0 +1,36 @@
+<h1>Weeek 5</h1>
+<h2>Exporting and iimporting in frontend</h2>
+<p>
+    In the context of frontend development, exporting refers to making a particular module or code block available for use in other parts of the application. <br>
+    This is typically done by using the export keyword to define a variable, function, or class as a named export.
+</p>
+<p>
+    On the other hand, importing refers to accessing the exported module or code block in another module or file. <br>
+    This is typically done using the import statement, which allows the developer to specify the module and <br>the specific named exports to be used in the importing module.
+</p>
+
+<h2>Commonjs vs type module in Node.js</h2>
+<p>
+    CommonJS and ES6 modules (also known as type modules) are two different systems for organizing and importing/exporting code in Node.js.
+</p>
+<p>
+    CommonJS is the older system, and it uses the require function to import modules, 
+    and the module.exports or exports object to export values from a module. <br>
+    CommonJS modules are loaded synchronously at runtime, <br>which means that their dependencies are resolved and loaded before the module's code is executed.
+</p>
+<p>
+    Type modules, on the other hand, are a newer and more standardized system for modules in JavaScript. <br>
+    They use the import statement to import modules, and the export statement to export values from a module. <br>
+    Type modules are loaded asynchronously at runtime, which means that their dependencies are resolved and loaded dynamically as needed.
+</p>
+<h2>Cross-site scripting (XSS)</h2>
+<p>
+    Cross-site scripting (XSS) is a type of security vulnerability that allows attackers to inject malicious code, typically in the form of a script, <br>
+    into a web page viewed by other users.
+<br>
+    The attacker can inject the malicious code into a web page by exploiting a vulnerability in the website's input validation process.<br>
+    When a user visits the page that contains the malicious code, their browser will execute the code, <br>
+    allowing the attacker to steal sensitive information.<br>
+    To prevent XSS attacks, websites should implement proper input validation and sanitization techniques, <br>
+    such as filtering or escaping user input, and should also use secure coding practices.
+</p>
